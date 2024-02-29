@@ -45,6 +45,10 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
+app.get("/hello", (req, res) => {
+  res.send("CI/CD ho gaya bhai with EC2 .... Hey...");
+});
+
 
 app.get("*", (req, res) => {
     res.send("sorry this page doesn’t exists.");
